@@ -1,13 +1,13 @@
 'use client';
 
 
-const SomethingErrorHandler = () => {
+const NestedErrorHandler = () => {
 
     return (
         <div>
-            SomethingErrorHandler
+            NestedErrorHandler
         </div>
     )
 }
 
-export default SomethingErrorHandler
+export default NestedErrorHandler
