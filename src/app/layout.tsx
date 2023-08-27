@@ -11,12 +11,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+    nested,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
+  nested: React.ReactNode,
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <div className="bg-red-500 h-64 w-full">
+        {nested}
+      </div>
+      <div className="bg-blue-500 h-64 w-full">
+        {children}
+      </div>
+      </body>
     </html>
   )
 }
